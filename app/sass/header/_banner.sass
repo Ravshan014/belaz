@@ -1,0 +1,212 @@
+.banner
+	background: url('/app/img/header/bg.jpg') center center no-repeat
+	background-size: cover
+	height: auto
+
+.banner__content
+	background: $banner
+	width: 50%
+	padding: 55px 55px
+
+.banner__content--xs
+	display: none
+	background: $banner
+	width: 70%
+	padding: 30px 0
+
+
+
+.content__first
+	margin: 0 0 50px 0
+	width: 350px
+
+	.content__title
+		font-size: 30px
+		font-family: $proxima-nova
+		font-weight: 900
+	.content__small
+		padding-top: 15px
+		font-size: 16px
+		font-weight: 900
+
+
+.content__ul
+	margin-top: 50px
+
+.content__li
+	display: flex
+	align-items: center
+	margin: 30px 0
+	
+.li__img
+	width: 32px
+	height: 25px
+	margin-right: 20px
+
+.li__text, .li__text-md
+	font-size: 14px
+	font-weight: 700
+	margin: 0
+
+.li__text-xs
+	display: none
+	font-weight: 700
+
+
+//***************МЕДИАЗАПРОСЫ**************//
+
+@media(max-width: 1024px)
+
+	.banner__content
+		padding: 25px 55px
+
+
+@media(max-width: 992px)
+	
+	.banner__content
+		width: 55%
+		padding: 40px 45px
+	
+	.content__first
+		width: 300px
+		margin: 0 0 15px 0
+
+		.content__title
+			font-size: 26px
+
+	.content__ul
+		margin-top: 25px
+
+	.content__li
+		margin: 25px 0
+
+
+@media(max-width: 768px)
+	
+	.banner__content
+		width: 65%
+		padding: 30px 35px
+	
+		.content__title
+			font-size: 22px
+
+		.content__small
+			font-size: 16px
+
+		.content__ul
+			margin-top: 20px
+
+	.li__text, .li__text-md
+		font-size: 12px
+		font-weight: 700
+
+	.li__img
+		width: 35px
+		height: 25px
+
+
+
+@media(max-width: 576px)
+
+	.banner
+		margin-bottom: 20px
+
+	.banner__content
+		padding: 30px 30px
+		visibility: visible
+	
+	.content__first
+		margin-bottom: 10px
+
+		.content__title
+			width: 200px
+			font-size: 18px
+			padding: 0
+
+		.content__small
+			padding-top: 10px
+			font-size: 12px
+
+	.content__ul
+		margin-top: 10px
+		display: flex
+		flex-direction: column 
+
+
+	.content__li
+		margin: 10px 0
+
+	.li__text, .li__text-md
+		font-size: 12px
+		font-weight: 500
+
+	.li__img
+		width: 30px
+		height: 20px
+
+
+
+
+@media(max-width: 502px)
+	
+	.banner__content
+		padding: 20px 20px
+
+	.content__first
+
+		.content__title
+			width: 200px
+			font-size: 18px
+		.content__small
+			font-size: 12px
+	
+	.li__text-md
+		display: none
+
+	.li__text-xs, .li__text
+		width: 100px
+		display: block
+		font-size: 10px
+		font-weight: 500
+		margin: 0
+
+	.li__img
+		width: 25px
+		height: 15px
+
+
+
+
+@media(max-width: 400px)
+
+	.banner__content
+		width: 70%
+
+	.li__text-xs, .li__text	
+		font-size: 10px
+		width: 100px
+		font-weight: 700
+
+
+	.content__first
+
+		.content__title
+			font-size: 16px
+			width: 180px
+
+		.content__small
+			font-size: 12px
+
+	.content__li
+		margin: 5px 0
+
+	.li__text-xs, .li__text
+		font-size: 9px
+		padding: 0
+
+	.li__img
+		width: 16px
+		height: 12px
+		margin-right: 15px
+
+

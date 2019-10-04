@@ -1,0 +1,95 @@
+.footer
+	background: $header
+	color: $main
+	padding: 25px 0
+
+.footer-all
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.footer-info
+	
+	&__text
+		margin: 0
+		padding: 0
+		font-size: 10px
+
+		.love-img, .logo-img
+			padding: 0 5px
+
+.footer-end
+	text-align: center
+
+	&__text
+		margin: 0
+		padding: 0 0 10px 0
+		font-size: 12px
+
+	&__phone
+		margin: 0
+		font-size: 18px
+
+
+
+@media(max-width: 768px)
+	
+	.footer	
+		padding: 10px 0
+
+
+	.footer-end
+
+		&__text
+			padding: 0
+			font-size: 12px
+
+		&__phone
+			font-size: 14px
+
+	.footer-info__text
+		display: none
+
+	.xs
+		margin-top: 10px
+		display: block
+		font-size: 10px
+
+		.love-img
+			width: 10px
+			margin: 0 5px
+
+		.logo-img
+			margin: 0 5px
+			width: 80px
+
+
+
+@media(max-width: 620px)
+
+	.xs
+		font-size: 8px
+		margin-top: 15px
+
+		.logo-img
+			width: 60px
+
+	.footer-end
+		&__text
+			font-size: 8px
+
+		&__phone
+			font-size: 10px
+
+	.logo__img--footer
+		width: 130px
+
+
+
+@media(max-width: 480px)
+
+	.footer	
+		padding: 10px 0
+
+	.xs
+		display: none

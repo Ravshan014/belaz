@@ -1,0 +1,254 @@
+.price
+	padding: 100px 10px
+	background: url('/app/img/forms/bg.jpg') center center no-repeat
+	background-size: contain	
+	font-family: $proxima-nova
+
+
+.price__full
+	width: 65%
+	margin-left: auto
+	text-align: right
+
+.price-title
+	padding-bottom: 20px
+
+.price-title__title
+	font-size: 30px
+	font-weight: 900
+
+.form__input
+	padding: 20px 0
+	display: flex
+
+.input__sms
+	background: url('/app/img/forms/mail.png') center right 15px no-repeat
+	margin-right: 20px
+	width: 48%
+	padding: 20px 30px
+	background-color: $inputColor
+	border: none
+	font-size: 12px
+	font-weight: 700
+	opacity: .6
+	text-transform: uppercase
+	&:focus
+		opacity: 10
+		outline-color: #999
+
+
+
+.input__sms--call
+	background: url('/app/img/forms/phone.png') center right 15px no-repeat
+	width: 48%
+	padding: 20px 30px
+	background-color: $inputColor
+	border: none
+	font-size: 12px
+	font-weight: 700
+	opacity: .6
+	text-transform: uppercase
+	&:focus
+		opacity: 10
+		outline-color: #999
+
+.form-btn
+	display: flex
+	width: 100%
+	justify-content: space-between
+	margin-top: 20px
+
+
+.alert
+	display: flex
+	align-items: center
+	padding: 0
+	margin-left: 55px
+
+.alert__info
+	font-size: 12px
+	font-weight: 700
+	margin: 0 20px 10px 0
+
+.alert__img
+	width: 30px
+	height: 25px
+
+
+.form-btn__btn
+	width: 60%
+	padding: 20px 60px
+	margin-left: 30px
+	background: $btn1
+	border: none
+	font-size: 16px
+	color: $main
+	font-weight: 700
+	text-transform: uppercase
+	border: solid 4px $btn1
+	transition: all .3s ease
+	&:hover
+		background-color: $main
+		color:  $btn1
+		font-weight: 900
+		transition: all .3s ease
+	&:focus
+		outline: none
+
+
+
+
+
+
+
+@media(max-width: 1200px)
+	
+	.form__input
+		margin-left: 10%
+
+	.input__sms, .input__sms--call
+		width: 50%
+
+	.form-btn__btn
+		width: 55%
+		padding: 20px 40px
+		font-size: 14px
+	
+	.alert	
+		margin-right: 20px
+		margin-left: 20px
+
+
+
+@media (max-width: 992px)
+	
+	.price
+		background-size: 900px 300px
+		padding: 50px 0
+
+	.price__full
+		width: 60%
+
+	.price-title__title
+		font-size: 24px
+		font-weight: 900
+
+	.form__input
+		margin-left: 0
+
+	.input__sms, .input__sms--call
+		width: 50%
+
+	.alert__info
+		font-size: 10px
+		
+	.form-btn
+		justify-content: flex-end	
+
+	.alert	
+		margin-left: 20px
+		margin-right: 50px
+
+	.form-btn__btn
+		max-width: 50%
+		height: 50px
+		padding: 0
+		font-size: 12px
+		margin: 0
+	
+	.input__sms, .input__sms--call
+		height: 50px
+		font-size: 14px
+		text-transform: lowercase
+		padding: 0px 15px
+
+
+@media (max-width: 768px)
+
+	.price
+		background-size: 800px 300px
+	
+	.price-title
+		padding-bottom: 10px
+
+	.price-title__title
+		font-size: 20px
+
+	.form__input
+		padding: 0
+		flex-direction: column
+		justify-content: center
+
+	.input__sms, .input__sms--call
+		width: 90%
+		font-size: 14px
+		text-transform: lowercase
+		margin: 5px 0
+		margin-left: 10%
+
+	.form-btn__btn
+		width: 50%
+		height: 50px
+		padding: 0px 15px
+		font-size: 12px
+		border: solid 2px $btn1
+
+	.alert
+		display: none
+
+
+@media (max-width: 576px)
+	
+	.price
+		background-size: 700px 250px
+	
+	.price__full
+		width: 70%
+
+	.price-title__title
+		font-size: 20px
+		text-align: right
+
+	.form__input
+		text-align: center
+
+	.input__sms, .input__sms--call
+		font-size: 12px
+		text-transform: lowercase
+		height: 35px
+		background-size: 15px 12px
+
+	.form-btn
+		justify-content: flex-end
+
+	.form-btn__btn
+		padding: 0
+		font-size: 12px
+		height: 40px
+
+
+
+
+@media (min-width: 320px) and (max-width: 470px)
+
+	.price
+		background-size: 500px 200px
+
+	.price__full
+		width: 80%
+
+	.price-title__title
+		margin: 0
+		padding-bottom: 30px
+		font-size: 16px
+
+	.form-btn__btn
+		width: 100px
+		font-size: 8px
+		font-weight: 500
+		height: 26px
+
+	.input__sms, .input__sms--call
+		height: 30px
+		font-size: 10px
+		text-transform: lowercase

@@ -1,0 +1,219 @@
+.articul
+	background: url('/app/img/articul/bg.jpg') center center no-repeat
+	background-size: cover
+	padding: 100px 0
+	border-top: solid #6f7ae5 1px
+	color: $main
+
+.articul__first
+	margin-bottom: 50px
+	text-align: center
+
+.articul__title
+	font-size: 30px
+	font-weight: 700
+	margin-bottom: 30px
+
+.articul__text
+	font-size: 16px
+	font-weight: 300
+	span
+		text-transform: uppercase
+
+.articul-form
+	margin-bottom: 50px
+	display: flex
+	justify-content: space-between
+
+.articul-form__input
+	border: none
+	margin-right: 30px
+	flex-basis: 32%
+	height: 60px
+	padding: 0 20px
+	font-size: 14px
+	font-weight: 900
+	text-transform: uppercase
+	background-color: $inputColor
+	&:focus
+		outline-color: #999
+		font-weight: 900
+
+.articul-form__input--call
+	background: url('/app/img/forms/phone.png') center right 20px no-repeat
+	border: none
+	margin-right: 30px
+	flex-basis: 32%
+	height: 60px
+	padding: 0 20px
+	font-size: 14px
+	font-weight: 900
+	text-transform: uppercase
+	background-color: $inputColor
+	&:focus
+		outline-color: #999
+		font-weight: 900
+
+.articul-form__btn
+	flex-basis: 32%
+	background-color: $btn2
+	border: none
+	color: $main
+	font-size: 16px
+	font-weight: 900
+	text-transform: uppercase
+	transition: all .3s ease
+	border: solid $btn2 4px
+	&:hover
+		color: $btn2
+		background-color: $main
+		font-weight: 900
+		transition: all .3s ease
+	&:focus
+		outline: none
+		font-weight: 900
+
+.articul-contact
+	text-align: center
+
+.articul-contact__info
+	margin-bottom: 15px
+	font-size: 16px
+	font-weight: 300
+
+.articul-contact__phone
+	margin-top: 30px
+	font-size: 24px
+	font-weight: 900
+
+
+
+@media(max-width: 992px)
+	
+	.articul-form__input, .articul-form__input--call
+		height: 50px
+		font-size: 12px
+
+	.articul-form__btn
+		font-size: 14px
+
+
+@media (max-width: 768px)
+
+	.articul
+		padding: 40px 0
+
+	.articul__title
+		font-size: 22px
+		margin-bottom: 20px
+		
+	.articul__text
+		font-size: 14px
+		margin-bottom: 10px
+
+	.articul__first
+		margin-bottom: 30px
+
+	.articul-form	
+		flex-wrap: wrap
+		justify-content: center
+		margin: 50px 0
+
+	.articul-form__input, .articul-form__input--call
+		height: 40px
+		font-size: 14px
+		margin-bottom: 20px
+		text-transform: lowercase
+		background-size: 15px 15px
+		background-position: center right 10px
+		font-weight: 900
+		margin-right: 10px
+
+	.articul-form__btn
+		height: 40px
+		font-size: 12px
+		border: solid 2px $btn2
+
+			
+
+	.articul-contact__phone
+		font-size: 18px
+
+
+@media(max-width: 630px)
+
+	.articul
+		padding: 40px 0
+
+	.articul__title
+		font-size: 20px
+		margin-bottom: 25px
+		
+	.articul__text
+		font-size: 14px
+
+	.articul__first
+		margin-bottom: 15px
+
+	.articul-contact__info
+		margin-bottom: 10px
+
+	.articul-form
+		margin: 30px 0 
+
+	.articul-contact__phone
+		margin-top: 10px
+
+
+
+@media(max-width: 525px)
+
+	.articul-form
+		flex-direction: column
+		padding: 0 50px
+		margin-bottom: 30px
+
+	.articul-form__input--call, .articul-form__input
+		padding: 8px 20px
+		margin: 0
+		margin-bottom: 10px
+
+	.articul-form__btn
+		padding: 6px 0
+
+	.articul-contact__info
+		font-size: 12px
+
+
+
+ 
+@media(max-width: 460px)
+	
+	.articul
+		padding: 20px 0
+
+	.articul__title
+		font-size: 18px
+		font-weight: 500
+
+	.articul__text, .articul-contact__info, .articul-form__input--call, .articul-form__input
+		font-size: 10px
+
+	.articul__text
+		padding: 0 30px
+
+	.articul-form__btn
+	 	font-size: 8px
+	
+	.articul-contact__info
+		padding: 0 30px
+		margin-bottom: 0
+
+	.articul-contact__phone
+		font-size: 14px
+
+
+@media(max-width: 320px)
+
+	.articul-form
+		padding: 0 30px

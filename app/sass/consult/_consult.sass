@@ -1,0 +1,143 @@
+.consult
+	background: url('/app/img/consult/bg.jpg') center center no-repeat 
+	background-size: cover
+	color: $main
+	padding: 80px 0
+
+.first
+	margin-bottom: 50px
+
+.title-v
+	text-align: center
+	font-size: 30px
+	font-weight: 900
+
+.consult-mobile
+	text-align: center
+	margin-bottom: 50px
+
+	&__text
+		font-size: 16px
+
+	&__num
+		font-size: 24px
+
+.consult-btn
+	display: flex
+	justify-content: center
+	align-items: center
+
+	&__button
+		background: $btn2
+		flex-basis: 40%
+		font-size: 18px
+		text-transform: uppercase
+		color: $main
+		font-weight: 700
+		border: none
+		border: solid 2px $btn2
+		height: 68px
+		transition: all 0.3s ease-in-out
+		&:hover
+			transition: all 0.3s ease-in-out
+			background: $main
+			color: $btn2
+
+		&:focus
+			outline-color: $btn2
+
+.flex-input
+	flex-basis: 40%
+	height: 70px
+	opacity: 0.7
+	&:hover
+		opacity: 10
+
+	&:focus
+		opacity: 10
+
+
+@media(max-width: 992px)
+
+	.flex-input, .consult-btn__button
+		flex-basis: 50%
+		height: 60px
+
+
+
+@media(max-width: 768px)
+
+	.consult	
+		padding: 40px 0
+
+	.title-v
+		font-size: 22px
+
+	.flex-input, .consult-btn__button
+		flex-basis: 45%
+		height: 45px
+		font-size: 14px
+		margin: 0
+
+	.flex-input
+		margin-right: 15px
+
+		
+
+@media(max-width: 576px)
+
+	.first
+		margin-bottom: 20px
+
+	.title-v
+		font-size: 18px
+
+	.consult-mobile
+		margin-bottom: 30px
+
+		&__text
+			font-size: 12px
+
+		&__num
+			font-size: 18px
+
+	.flex-input, .consult-btn__button
+		flex-basis: 35%
+		height: 35px
+		font-size: 12px
+
+	.consult-btn__button
+		font-size: 10px
+		border: solid 1px $btn2
+
+
+@media(max-width: 400px)
+
+	.consult
+		padding: 20px 0 40px 0
+
+	.first
+
+	.title-v
+		font-size: 16px
+
+	.consult-btn
+		flex-direction: column
+		justify-content: flex-end
+
+		.flex-input, .consult-btn__button
+			flex-basis: 50%
+			margin-top: 6px
+		
+		.consult-btn__button
+			padding: 5px 10px
+
+		.flex-input
+			margin: 0
+			flex-basis: 50%	
+			height: 40px
+
+
+	.consult-mobile
+		margin-bottom: 20px
+

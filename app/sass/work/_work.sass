@@ -1,0 +1,132 @@
+.work
+	padding: 80px 0
+	background: $main
+
+.work-first
+	text-align: center
+	margin-bottom: 100px
+
+	&__title
+		font-size: 32px
+		font-weight: 900
+		margin-bottom: 30px
+
+	&__text
+		font-size: 18px
+		font-weight: 500
+
+.work-cards
+	display: flex
+	justify-content: space-between
+
+.card
+	text-align: center
+	flex-basis: 30%
+	padding: 0 20px
+
+	&__img
+		margin-bottom: 30px
+
+	&__text
+		font-size: 16px
+		font-weight: 500
+
+
+
+
+@media(max-width: 992px)
+	
+	.card
+		padding: 0 10px
+
+
+
+@media(max-width: 768px)
+
+	.work
+		padding: 40px 0
+
+	.work-first
+		margin-bottom: 60px
+
+		&__title
+			font-size: 24px
+			margin-bottom: 10px
+
+		&__text
+			font-size: 14px
+			font-weight: 700
+
+
+	.work-cards
+		flex-wrap: wrap
+		justify-content: center
+	
+	.card	
+		flex-basis: 50%
+		padding: 20px 30px
+
+		&__text
+			font-size: 14px
+			font-weight: 700
+	
+
+@media(max-width: 620px)
+
+	.work-first
+		margin-bottom: 30px
+
+		&__title
+			font-size: 20px	
+
+		&__text
+			font-size: 12px
+			font-weight: 700
+
+
+	.card
+
+		&__img
+			width: 70px
+			margin-bottom: 20px
+
+		&__text
+			font-size: 12px
+			font-weight: 700
+
+
+
+@media(max-width: 500px)
+
+	.work-first
+		margin-bottom: 50px
+
+		&__title
+			font-size: 18px	
+
+		&__text
+			font-size: 12px
+
+	.card	
+		padding: 20px 0
+
+
+@media(max-width: 400px)
+	
+	.work
+		padding: 20px 0
+
+	.work-first
+		margin-bottom: 30px
+
+	.work-cards
+		flex-direction: column
+
+	.card
+		padding: 10px 40px
+
+		&__img
+			width: 60px
+
+		&__text
+			font-size: 11px

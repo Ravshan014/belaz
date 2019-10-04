@@ -1,0 +1,74 @@
+
+//******************************ШРИФТЫ**************************//
+//**************************************************************//
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Black.eot');
+	src: url('../fonts/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+	url('ProximaNova-Black.woff') format('woff'),
+	url('ProximaNova-Black.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+	url('ProximaNova-Regular.woff') format('woff'),
+	url('ProximaNova-Regular.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+	url('ProximaNova-Bold.woff') format('woff'),
+	url('ProximaNova-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+//*************************ПЕРЕМЕННЫЕ ШРИФТОВ**************************//
+//*********************************************************************//
+
+$proxima-nova: 'Proxima Nova' sans-serif;
+
+//*************************ПЕРЕМЕННЫЕ ЦВЕТОВ**************************//
+//*********************************************************************//
+
+$main: #fff;
+$black: #000;
+$secondBg: #08243e;
+$banner: #f7b516;
+$btn1: #1669b3;
+$btn2: #f7b516;
+$header: #191919;
+$inputColor: #f2f2f2;
+$thirdBg: #0b3554;
+
+
+
+//*************************ПЕРЕМЕННЫЕ GRID**************************//
+//*********************************************************************//
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+);
+
+
+$container-max-widths: (
+	sm: 640px, 
+	md: 800px,
+	lg: 900px,
+	xl: 995px
+);
+
+$grid-gutter-width: 40px;

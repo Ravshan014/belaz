@@ -1,0 +1,167 @@
+.varranty
+	padding: 80px 0
+	background-color: $main
+
+.varranty-first
+	margin: 0 auto
+	margin-bottom: 80px
+	text-align: center
+	max-width: 600px
+
+	&__title
+		margin: 0 auto
+		font-size: 30px
+		font-weight: 900
+
+.varranty-cards
+	display: flex
+	justify-content: space-between
+	text-align: center
+
+	&__card
+		flex-basis: 33%
+		padding: 0 10px
+	
+	&__img
+		width: 200px
+		padding-bottom: 30px
+
+	&__text
+		min-height: 80px 
+		font-size: 16px
+		font-weight: 500
+		margin-bottom: 20px
+
+	&__more
+		text-transform: uppercase
+		color: $black
+		font-size: 16px
+		font-weight: 900
+		text-decoration: none
+		border-bottom: solid 2px #999
+		transition: all 0.2s ease
+		&:hover
+			text-decoration: none
+			color: #666
+			border-color: $black
+			transition: all 0.2s ease
+
+
+
+
+@media(max-width: 1024px)
+	
+	.varranty-cards
+
+		&__card
+			padding: 0 15px
+
+		&__text
+			font-size: 14px
+			min-height: 50px
+
+
+
+
+@media(max-width: 768px)
+
+	.varranty
+		padding: 40px 0
+
+	.varranty-first
+		margin-bottom: 20px
+
+		&__title
+			font-size: 20px
+			width: 500px
+
+	.varranty-cards
+		flex-wrap: wrap
+		justify-content: center
+		
+		&__card
+			flex-basis: 45%
+			padding: 30px 20px 
+
+		&__text
+			font-size: 14px
+			margin-bottom: 10px
+		
+		&__img
+			width: 170px
+
+
+@media (max-width: 630px)
+
+	.varranty-first
+		margin-bottom: 20px
+
+		&__title
+			width: 350px
+			font-size: 18px
+
+
+	.varranty-cards
+
+		&__card
+			padding: 20px
+
+		&__text
+			font-size: 12px
+			margin-bottom: 0 
+
+		&__more
+			font-size: 12px
+			font-weight: 900
+
+		&__img
+			width: 140px
+			padding-bottom: 20px
+
+
+@media(max-width: 550px)
+
+	.varranty-first
+		margin-bottom: 20px
+
+		&__title
+			width: 350px
+			font-size: 18px
+
+	.varranty-cards
+
+		&__card
+			flex-basis: 50%
+			padding: 20px 
+
+@media(max-width: 480px)
+	
+	.varranty-first
+
+		&__title
+			width: 300px
+			font-size: 16px
+
+	.varranty-cards
+
+		&__card
+			flex-basis: 70%
+			padding: 20px 50px
+			margin: 15px 0 0 0
+
+
+@media(max-width: 440px)
+
+	.varranty
+		padding: 20px 0
+
+	.varranty-cards
+
+		&__card
+			flex-basis: 70%
+			padding: 10px
+
+	.varranty-cards
+
+		&__more
+			font-size: 10px

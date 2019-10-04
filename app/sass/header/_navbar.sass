@@ -1,0 +1,188 @@
+.navbar
+	background: $header
+	padding: 25px 0
+
+.navbar__row
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.navbar__logo
+	display: flex
+	align-items: center
+	text-align: left
+
+.navbar__logo--xs
+	display: none
+
+.phone-number-xs
+	display: none
+
+.navbar__time
+	text-align: center
+	margin-left: 100px
+
+	.time__text
+		margin: 0
+		color: $main
+		font-size: 12px
+		font-family: $proxima-nova
+		font-weight: 900
+		span
+			font-weight: 300
+
+.navbar__right
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+
+//************ТЕЛЕФОННЫЙ НОМЕР**************//
+
+
+.phone-xs
+	display: none
+
+	.phone-xs__img
+		width: 55px
+
+.phone__text
+	margin: 0
+	font-family: $proxima-nova
+	font-size: 16px
+	color: $main
+
+
+//************КНОПКА ЗВОНОК**************//
+
+.button__call
+	margin: 0 15px
+	background: $btn1
+	border: none
+	font-family: $proxima-nova
+	text-transform: uppercase
+	color: $main
+	font-size: 12px
+	font-weight: 700
+	padding: 12px 26px
+	border: solid 3px $btn1
+	transition: all .3s ease
+	&:hover
+		background-color: $main
+		color:  $btn1
+		font-weight: 900
+		transition: all .3s ease
+	&:focus
+		outline: none
+
+
+
+
+
+//************МЕДИАЗАПРОСЫ**************//
+
+//************ЭКРАН 1024px**************//
+
+@media (max-width: 1024px) 
+
+	.navbar__time
+		margin-left: 50px
+	
+	.phone__text
+		font-size: 16px	
+
+	.button__call
+		font-size: 12px
+		padding: 12px 20px
+
+
+
+//************ЭКРАН 992px**************//
+
+@media (max-width: 992px) 
+	.navbar__time
+		padding: 0
+		.time__text
+			font-size: 10px
+
+	.phone__text
+		font-size: 16px	
+
+	.button__call
+		font-size: 10px
+		padding: 13px 15px
+
+
+//************ЭКРАН 768px**************//
+
+@media (max-width: 768px)
+	
+	.logo__img
+		width: 170px
+
+	.navbar__right
+		margin-left: auto
+
+	.phone__text
+		font-size: 14px	
+	
+	.navbar__time
+		display: none
+
+
+//************ЭКРАН 520px**************//
+
+
+@media (max-width: 550px)
+	
+	.logo__img
+		width: 150px
+
+	.navbar
+		padding: 15px 0
+
+	.navbar__button
+		display: none
+
+	.phone__text
+		font-size: 12px
+		margin-right: 10px
+
+
+//************ЭКРАН 440px**************//
+
+@media (max-width: 400px)
+	
+	.navbar
+		padding: 10px 0
+	
+	.logo__img
+		width: 130px
+
+	.phone__text
+		font-size: 10px
+
+
+
+@media(max-width: 350px)
+
+	
+	.phone-xs
+		display: block
+		
+		.phone-xs__img
+			width: 20px
+			cursor: pointer
+	
+	.phone-number-xs
+		display: none
+		padding: 10px 0
+		background: $header
+		position: absolute
+		right: 0
+		background: rgba(70, 70, 70, .8)
+
+ 
+			
+	.phone
+		display: none
